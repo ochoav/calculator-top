@@ -9,7 +9,7 @@
     width: 460px;
     margin: 50px auto;
     padding: 10px 10px;
-    background-color: #037bc0;
+    background-color: #00659f;
     box-shadow: 8px 12px 5px rgba(96, 95, 95, 0.588);
 }
 
@@ -47,7 +47,7 @@
 
 .digit {
     background-color: #ffffff;
-    color: #037bc0;
+    color: #00659f;
 }
 
 .operation {
