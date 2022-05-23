@@ -5,7 +5,12 @@
 
 .calculator {
     border: 2px solid black;
-    margin: 0 31%;
+    border-radius: 0 0 10px 10px;
+    width: 460px;
+    margin: 50px auto;
+    padding: 10px 10px;
+    background-color: #037bc0;
+    box-shadow: 8px 12px 5px rgba(96, 95, 95, 0.588);
 }
 
 .buttons *, .display {
@@ -22,12 +27,30 @@
 }
 
 .buttons * {
-    width: 120px;
-    height: 120px;
-    text-align: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 3px 1px rgba(96, 95, 95, 0.726);
 }
 
 .display {
-    padding: 50px 0;
+    margin: 8px 10px 30px;
+    padding: 50px 10px 50px 0;
+    border-radius: 8px;
     text-align: right;
+    background-color: #ffffff;
+    box-shadow: inset 2px 3px 2px rgba(96, 95, 95, 0.726);
+}
+
+.digit {
+    background-color: #ffffff;
+    color: #037bc0;
+}
+
+.operation {
+    background-color: #ff2e2e;
+    color: #ffffff;
 }
