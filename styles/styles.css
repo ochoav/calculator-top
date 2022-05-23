@@ -54,3 +54,15 @@
     background-color: #ff2e2e;
     color: #ffffff;
 }
+
+footer {
+    text-align: center;
+    font-family: monospace, sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+footer p {
+    margin-bottom: 0em;
+    margin-top: 0em;
+}
