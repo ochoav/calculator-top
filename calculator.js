@@ -1,3 +1,9 @@
+let display = "";
+
+let firstOperand = "";
+let operator = undefined;
+let secondOperand = "";
+
 const add = function (a, b) {
     return a + b;
 };
@@ -28,4 +34,23 @@ const operate = function (op, a, b) {
             return "Invalid operation";
     };
 };
+
+function setUpNumberButtons() {
+    const displayScreen = document.querySelector('.display');
+    document.querySelectorAll('.digit').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            if (operator === undefined) {
+                firstOperand += btn.textContent;
+                displayScreen.textContent = firstOperand;
+            } else {
+                secondOperand += btn.textContent;
+                displayScreen.textContent = secondOperand;
+            }
+        });
+    });
+}
+
+setUpNumberButtons();
+
+
 
