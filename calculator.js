@@ -35,6 +35,11 @@ const operate = function (op, a, b) {
     };
 };
 
+function initButtons () {
+    setUpNumberButtons();
+    setUpOperatorButtons();
+}
+
 function setUpNumberButtons() {
     const displayScreen = document.querySelector('.display');
     document.querySelectorAll('.digit').forEach(btn => {
@@ -50,7 +55,23 @@ function setUpNumberButtons() {
     });
 }
 
-setUpNumberButtons();
+function setUpOperatorButtons() {
+    const displayScreen = document.querySelector('.display');
+    document.querySelectorAll('.operation').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            if(btn.textContent === '=') {
+                const result = operate(firstOperand, secondOperand, operator);
+                firstOperand = result;
+                operator = undefined;
+                secondOperand = "";
+                displayScreen.textContent = result;
+            } 
+        })
+    })
+}
+
+initButtons();
+
 
 
 
